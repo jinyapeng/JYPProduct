@@ -1,0 +1,17 @@
+
+platform :ios, '9.0'
+
+target 'JYPProduct' do
+
+  pod 'Masonry'
+  pod 'MJExtension'
+  pod 'MJRefresh'
+  pod 'IQKeyboardManager' # 键盘
+  pod 'ReactiveObjC'      # 详解 http://www.jianshu.com/p/0845b1a07bfa
+  pod 'SVProgressHUD'     
+  pod 'AFNetworking'
+  pod 'YYModel'
+  
+  
+  
+end
