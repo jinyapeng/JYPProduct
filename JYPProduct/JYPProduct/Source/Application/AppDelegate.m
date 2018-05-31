@@ -27,9 +27,9 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    HomeViewController *HomeVC = [[HomeViewController alloc] init];
-    BaseNavigationViewController *HomeNC = [[BaseNavigationViewController alloc] initWithRootViewController:HomeVC];
-    self.window.rootViewController = HomeNC;
+    BaseTabBarController *tabBarVC = [[BaseTabBarController alloc] init];
+  //  BaseNavigationViewController *HomeNC = [[BaseNavigationViewController alloc] initWithRootViewController:HomeVC];
+    self.window.rootViewController = tabBarVC;
     
     return YES;
 }

@@ -21,6 +21,9 @@
 
 #define KHEIGHT CGRectGetHeight([[UIScreen mainScreen] bounds])
 
+#define NAVBAR_HEIGHT iPhoneX ? 88 : 64
+
+
 /** 设备是否为iPhone 4/4S 分辨率320x480，像素640x960，@2x */
 #define iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
 

@@ -11,7 +11,7 @@ target 'JYPProduct' do
   pod 'SVProgressHUD'     
   pod 'AFNetworking'
   pod 'YYModel'
-  
+  pod 'LYEmptyView'       # https://github.com/dev-liyang/LYEmptyView
   
   
 end

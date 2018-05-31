@@ -11,6 +11,7 @@
 
 #import "BaseNavigationViewController.h"
 #import "BaseViewController.h"
+#import "BaseTabBarController.h"
 #import "HomeViewController.h"
 
 

@@ -14,6 +14,9 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (nonatomic,strong)NSMutableArray *dataSource;
+
+@property (nonatomic, assign) NSInteger index;
 
 @end
 
@@ -22,19 +25,74 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [JYPLogLoadingView showInView:self.view];
+    
     [self initUIView];
     
+    
+    [self requestData];
 }
 
 - (void)initUIView
 {
+    WEAK
+    self.dataSource = [NSMutableArray new];
     
     self.navigationItem.title = @"列表";
     [self addRightBarButtonWithFirstImage:[UIImage imageNamed:@"Bar_add"] action:@selector(rightBarBtnAction)];
     
+    
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.tableView registerNib:[UINib nibWithNibName:@"DemoTableViewCell" bundle:nil] forCellReuseIdentifier:DemoTableViewCellID];
+    self.tableView.ly_emptyView = [JYPDIYEmpty diyNoNetworkEmptyWithTarget:self action:@selector(addObjectAction)];
+    
+    //pull request
+    [JYPMethodTools gifHeaderRefreshWithTableView:self.tableView completion:^{
+        STRONG
+        [self requestData];
+    }];
+    
+    [JYPMethodTools footerRefreshWithTableView:self.tableView completion:^{
+        STRONG
+        [self requestData];
+    }];
+    
+
+}
+
+
+- (void)requestData{
+    
+    //网络请求时调用
+    [self.tableView ly_startLoading];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        sleep(1);
+        _index ++;
+        
+        NSArray *arr;
+        if (_index % 2 == 0) {
+            arr = @[@"数据1"];
+        }
+        [self.dataSource addObjectsFromArray:arr];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [JYPLogLoadingView dismissInView:self.view];
+            
+            [self.tableView reloadData];
+            [self.tableView.mj_header endRefreshing];
+            [self.tableView.mj_footer endRefreshing];
+            [self.tableView ly_endLoading];//调用时机
+        });
+    });
+}
+
+- (void)addObjectAction
+{
+    [self.dataSource addObject:@"数据"];
+    [self.tableView reloadData];
 }
 
 
@@ -51,12 +109,12 @@
 #pragma mark - tableView 代理方法
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 10;
+    return self.dataSource.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return self.dataSource.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

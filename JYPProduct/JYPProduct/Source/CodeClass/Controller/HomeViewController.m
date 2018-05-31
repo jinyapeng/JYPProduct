@@ -20,8 +20,8 @@
 
     self.navigationItem.title = @"首页";
    
-    [self addRightTwoBarButtonsWithFirstImage:[UIImage imageNamed:@"Bar_set"] firstAction:@selector(firstItemBtnAction:)
-                                  secondImage:[UIImage imageNamed:@"Bar_set"] secondAction:@selector(secondItemAction)];
+    [self addRightTwoBarButtonsWithFirstImage:UIImageNamed(@"Bar_set") firstAction:@selector(firstItemBtnAction:)
+                                  secondImage:UIImageNamed(@"Bar_set") secondAction:@selector(secondItemAction)];
 }
 
 - (void)didReceiveMemoryWarning {

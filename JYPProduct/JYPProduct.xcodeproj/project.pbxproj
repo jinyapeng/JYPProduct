@@ -15,6 +15,8 @@
 		1805041B20A2FEAB004839E3 /* DemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805041920A2FEAB004839E3 /* DemoTableViewCell.m */; };
 		1805041C20A2FEAB004839E3 /* DemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1805041A20A2FEAB004839E3 /* DemoTableViewCell.xib */; };
 		1805041F20A3054B004839E3 /* APPViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805041E20A3054B004839E3 /* APPViewModel.m */; };
+		180A983220BE778600124564 /* JYPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 180A983120BE778600124564 /* JYPTabBar.m */; };
+		180A983820BE78B700124564 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180A983720BE78B700124564 /* BaseTabBarController.m */; };
 		1825CD2920AAD30500AEF292 /* UITextField+JKInputLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825CD2820AAD30500AEF292 /* UITextField+JKInputLimit.m */; };
 		183B0FAC2099B0BE00FB306E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B0FAB2099B0BE00FB306E /* AppDelegate.m */; };
 		183B0FB22099B0BE00FB306E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183B0FB02099B0BE00FB306E /* Main.storyboard */; };
@@ -47,6 +49,9 @@
 		18CA158920AD89BD008C435C /* CGXPickerViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CA157E20AD89BD008C435C /* CGXPickerViewManager.m */; };
 		18CA158A20AD89BD008C435C /* CGXStringPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CA158020AD89BD008C435C /* CGXStringPickerView.m */; };
 		18CA158B20AD89BD008C435C /* NSDate+CGXPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CA158220AD89BD008C435C /* NSDate+CGXPicker.m */; };
+		18D6085220BFDB79001C6B9F /* JYPDIYEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D6085120BFDB79001C6B9F /* JYPDIYEmpty.m */; };
+		18D6085720BFE438001C6B9F /* JYPLogLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D6085620BFE438001C6B9F /* JYPLogLoadingView.m */; };
+		18D6085B20BFF106001C6B9F /* JYPMethodTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D6085A20BFF106001C6B9F /* JYPMethodTools.m */; };
 		18FC95B220A1895000A52CC3 /* NSDictionary+jlExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FC95B120A1895000A52CC3 /* NSDictionary+jlExtension.m */; };
 		18FC95B920A189F800A52CC3 /* NSArray+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FC95B520A189F800A52CC3 /* NSArray+Block.m */; };
 		18FC95BA20A189F800A52CC3 /* NSArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FC95B720A189F800A52CC3 /* NSArray+SafeAccess.m */; };
@@ -98,6 +103,10 @@
 		1805041A20A2FEAB004839E3 /* DemoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoTableViewCell.xib; sourceTree = "<group>"; };
 		1805041D20A3054B004839E3 /* APPViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPViewModel.h; sourceTree = "<group>"; };
 		1805041E20A3054B004839E3 /* APPViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APPViewModel.m; sourceTree = "<group>"; };
+		180A983020BE778600124564 /* JYPTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYPTabBar.h; sourceTree = "<group>"; };
+		180A983120BE778600124564 /* JYPTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYPTabBar.m; sourceTree = "<group>"; };
+		180A983620BE78B700124564 /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		180A983720BE78B700124564 /* BaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		1825CD2720AAD30500AEF292 /* UITextField+JKInputLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+JKInputLimit.h"; sourceTree = "<group>"; };
 		1825CD2820AAD30500AEF292 /* UITextField+JKInputLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JKInputLimit.m"; sourceTree = "<group>"; };
 		1825CD2B20AAD32E00AEF292 /* UITextFieldHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextFieldHeader.h; sourceTree = "<group>"; };
@@ -169,6 +178,12 @@
 		18CA158020AD89BD008C435C /* CGXStringPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGXStringPickerView.m; sourceTree = "<group>"; };
 		18CA158120AD89BD008C435C /* NSDate+CGXPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CGXPicker.h"; sourceTree = "<group>"; };
 		18CA158220AD89BD008C435C /* NSDate+CGXPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CGXPicker.m"; sourceTree = "<group>"; };
+		18D6085020BFDB79001C6B9F /* JYPDIYEmpty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYPDIYEmpty.h; sourceTree = "<group>"; };
+		18D6085120BFDB79001C6B9F /* JYPDIYEmpty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYPDIYEmpty.m; sourceTree = "<group>"; };
+		18D6085520BFE438001C6B9F /* JYPLogLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYPLogLoadingView.h; sourceTree = "<group>"; };
+		18D6085620BFE438001C6B9F /* JYPLogLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYPLogLoadingView.m; sourceTree = "<group>"; };
+		18D6085920BFF106001C6B9F /* JYPMethodTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYPMethodTools.h; sourceTree = "<group>"; };
+		18D6085A20BFF106001C6B9F /* JYPMethodTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYPMethodTools.m; sourceTree = "<group>"; };
 		18FC95B020A1894F00A52CC3 /* NSDictionary+jlExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+jlExtension.h"; sourceTree = "<group>"; };
 		18FC95B120A1895000A52CC3 /* NSDictionary+jlExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+jlExtension.m"; sourceTree = "<group>"; };
 		18FC95B420A189F800A52CC3 /* NSArray+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Block.h"; sourceTree = "<group>"; };
@@ -258,6 +273,17 @@
 				1805041220A2FB85004839E3 /* UIViewHeader.h */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		180A982E20BE76C000124564 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				180A983020BE778600124564 /* JYPTabBar.h */,
+				180A983120BE778600124564 /* JYPTabBar.m */,
+				180A983620BE78B700124564 /* BaseTabBarController.h */,
+				180A983720BE78B700124564 /* BaseTabBarController.m */,
+			);
+			path = TabBarController;
 			sourceTree = "<group>";
 		};
 		183B0F9E2099B0BE00FB306E = {
@@ -362,6 +388,7 @@
 		183B0FDF2099B10800FB306E /* CodeClass */ = {
 			isa = PBXGroup;
 			children = (
+				180A982E20BE76C000124564 /* TabBarController */,
 				186B9F9320A96B3600CC15F9 /* RegistHousing */,
 				183B0FE02099B10800FB306E /* Controller */,
 				183B0FE12099B10800FB306E /* Model */,
@@ -425,6 +452,9 @@
 		183B0FE62099B10800FB306E /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				18D6085820BFF0DE001C6B9F /* MethodTools */,
+				18D6085420BFE40D001C6B9F /* HUDToolView */,
+				18D6084F20BFDB1F001C6B9F /* EmptyView */,
 				186B9FA020A9B74600CC15F9 /* CBUIKit */,
 				1805040620A2F955004839E3 /* CommomUtil */,
 			);
@@ -595,6 +625,33 @@
 			);
 			name = CGXPickerView;
 			path = "../../../../../../Downloads/CGXPickerViewDemo-master/CGXPickerView";
+			sourceTree = "<group>";
+		};
+		18D6084F20BFDB1F001C6B9F /* EmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				18D6085020BFDB79001C6B9F /* JYPDIYEmpty.h */,
+				18D6085120BFDB79001C6B9F /* JYPDIYEmpty.m */,
+			);
+			path = EmptyView;
+			sourceTree = "<group>";
+		};
+		18D6085420BFE40D001C6B9F /* HUDToolView */ = {
+			isa = PBXGroup;
+			children = (
+				18D6085520BFE438001C6B9F /* JYPLogLoadingView.h */,
+				18D6085620BFE438001C6B9F /* JYPLogLoadingView.m */,
+			);
+			path = HUDToolView;
+			sourceTree = "<group>";
+		};
+		18D6085820BFF0DE001C6B9F /* MethodTools */ = {
+			isa = PBXGroup;
+			children = (
+				18D6085920BFF106001C6B9F /* JYPMethodTools.h */,
+				18D6085A20BFF106001C6B9F /* JYPMethodTools.m */,
+			);
+			path = MethodTools;
 			sourceTree = "<group>";
 		};
 		18FC95B320A189F800A52CC3 /* NSArray */ = {
@@ -844,11 +901,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				18CA158620AD89BD008C435C /* CGXPickerUIBaseView.m in Sources */,
+				180A983820BE78B700124564 /* BaseTabBarController.m in Sources */,
 				183B10052099BD0B00FB306E /* NSDictionary+MAC.m in Sources */,
 				18CA158520AD89BD008C435C /* CGXDatePickerView.m in Sources */,
 				186B9F9E20A971C500CC15F9 /* RegistHoisingItem.m in Sources */,
 				18FC95D720A18F7300A52CC3 /* UINavigationController+SXFullScreen.m in Sources */,
+				180A983220BE778600124564 /* JYPTabBar.m in Sources */,
 				18CA158820AD89BD008C435C /* CGXPickerView.m in Sources */,
+				18D6085220BFDB79001C6B9F /* JYPDIYEmpty.m in Sources */,
 				18FC95D620A18F7300A52CC3 /* UINavigation+SXFixSpace.m in Sources */,
 				18CA158B20AD89BD008C435C /* NSDate+CGXPicker.m in Sources */,
 				183B10182099C2CF00FB306E /* NSObject+GCD.m in Sources */,
@@ -875,6 +935,7 @@
 				18FC95E420A1A17400A52CC3 /* BaseViewFromXib.m in Sources */,
 				18FC95C420A18A8F00A52CC3 /* UIColor+MACProject.m in Sources */,
 				1805040520A2F62B004839E3 /* BaseTableViewCell.m in Sources */,
+				18D6085720BFE438001C6B9F /* JYPLogLoadingView.m in Sources */,
 				18572F5620B56E930047651F /* UINavigationController+NavigationExtension.m in Sources */,
 				183B10172099C2CF00FB306E /* NSObject+Blocks.m in Sources */,
 				18FC95E120A19A1B00A52CC3 /* BaseViewController.m in Sources */,
@@ -887,6 +948,7 @@
 				18FC95B920A189F800A52CC3 /* NSArray+Block.m in Sources */,
 				186B9FA320A9B74600CC15F9 /* CBUIKit.m in Sources */,
 				1805041F20A3054B004839E3 /* APPViewModel.m in Sources */,
+				18D6085B20BFF106001C6B9F /* JYPMethodTools.m in Sources */,
 				18FC95DE20A198B100A52CC3 /* BaseNavigationViewController.m in Sources */,
 				18FC95C820A18B7000A52CC3 /* HomeViewController.m in Sources */,
 				183B10032099BD0B00FB306E /* NSDictionary+JKMerge.m in Sources */,
