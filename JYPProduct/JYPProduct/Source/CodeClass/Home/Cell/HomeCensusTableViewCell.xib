@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HomeCensusTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8dU-oN-SkL">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日新出房" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgY-ZY-pEV">
+                                <rect key="frame" x="0.0" y="39.5" width="80" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4z-xt-kR3">
+                                <rect key="frame" x="0.0" y="15" width="80" height="17.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="12">
+                                        <attributes>
+                                            <color key="NSColor" red="0.94509803921568625" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name=".SFNSText"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="间">
+                                        <attributes>
+                                            <color key="NSColor" red="0.94509803921568625" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="C4z-xt-kR3" firstAttribute="top" secondItem="8dU-oN-SkL" secondAttribute="top" constant="15" id="9F9-YR-Jh1"/>
+                            <constraint firstAttribute="trailing" secondItem="PgY-ZY-pEV" secondAttribute="trailing" id="IN7-eX-drU"/>
+                            <constraint firstAttribute="bottom" secondItem="PgY-ZY-pEV" secondAttribute="bottom" constant="7" id="gMe-sT-o76"/>
+                            <constraint firstItem="PgY-ZY-pEV" firstAttribute="leading" secondItem="8dU-oN-SkL" secondAttribute="leading" id="jWN-Wu-p2F"/>
+                            <constraint firstAttribute="trailing" secondItem="C4z-xt-kR3" secondAttribute="trailing" id="kZV-x9-cs5"/>
+                            <constraint firstItem="C4z-xt-kR3" firstAttribute="leading" secondItem="8dU-oN-SkL" secondAttribute="leading" id="sM5-yx-jXR"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfS-fh-U5i">
+                        <rect key="frame" x="160" y="0.0" width="80" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日新出房" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRr-Xx-sXU">
+                                <rect key="frame" x="0.0" y="39.5" width="80" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbg-Dt-6Jw">
+                                <rect key="frame" x="0.0" y="15" width="80" height="17.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="12">
+                                        <attributes>
+                                            <color key="NSColor" red="0.94509803920000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name=".SFNSText"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="间">
+                                        <attributes>
+                                            <color key="NSColor" red="0.94509803921568625" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="wbg-Dt-6Jw" firstAttribute="leading" secondItem="qfS-fh-U5i" secondAttribute="leading" id="1IV-S0-kNC"/>
+                            <constraint firstAttribute="trailing" secondItem="wRr-Xx-sXU" secondAttribute="trailing" id="3jT-pB-crM"/>
+                            <constraint firstItem="wbg-Dt-6Jw" firstAttribute="top" secondItem="qfS-fh-U5i" secondAttribute="top" constant="15" id="G8K-KC-KNz"/>
+                            <constraint firstItem="wRr-Xx-sXU" firstAttribute="leading" secondItem="qfS-fh-U5i" secondAttribute="leading" id="Qp2-rK-145"/>
+                            <constraint firstAttribute="bottom" secondItem="wRr-Xx-sXU" secondAttribute="bottom" constant="7" id="giq-vc-bKL"/>
+                            <constraint firstAttribute="trailing" secondItem="wbg-Dt-6Jw" secondAttribute="trailing" id="ife-EI-eYD"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSC-IW-DN8">
+                        <rect key="frame" x="240" y="0.0" width="80" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日新出房" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ji-ah-Dk5">
+                                <rect key="frame" x="0.0" y="39.5" width="80" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWv-sT-ikh">
+                                <rect key="frame" x="0.0" y="15" width="80" height="17.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="12">
+                                        <attributes>
+                                            <color key="NSColor" red="0.94509803920000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name=".SFNSText"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="间">
+                                        <attributes>
+                                            <color key="NSColor" red="0.94509803921568625" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eWv-sT-ikh" secondAttribute="trailing" id="J0Q-gw-bVa"/>
+                            <constraint firstAttribute="bottom" secondItem="8Ji-ah-Dk5" secondAttribute="bottom" constant="7" id="L6z-3Q-Sax"/>
+                            <constraint firstItem="8Ji-ah-Dk5" firstAttribute="leading" secondItem="zSC-IW-DN8" secondAttribute="leading" id="bl3-OI-xZh"/>
+                            <constraint firstAttribute="trailing" secondItem="8Ji-ah-Dk5" secondAttribute="trailing" id="ef0-mP-Z7Y"/>
+                            <constraint firstItem="eWv-sT-ikh" firstAttribute="leading" secondItem="zSC-IW-DN8" secondAttribute="leading" id="lQC-8W-9ym"/>
+                            <constraint firstItem="eWv-sT-ikh" firstAttribute="top" secondItem="zSC-IW-DN8" secondAttribute="top" constant="15" id="s2D-Gx-5Iv"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ij-5a-XTP">
+                        <rect key="frame" x="0.0" y="60" width="80" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日新出房" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNK-CJ-SaY">
+                                <rect key="frame" x="0.0" y="31.5" width="80" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDy-JK-fr7">
+                                <rect key="frame" x="0.0" y="7" width="80" height="17.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="12">
+                                        <attributes>
+                                            <color key="NSColor" red="0.94509803920000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name=".SFNSText"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="间">
+                                        <attributes>
+                                            <color key="NSColor" red="0.94509803921568625" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="UNK-CJ-SaY" firstAttribute="leading" secondItem="4Ij-5a-XTP" secondAttribute="leading" id="1Tr-Xy-E0u"/>
+                            <constraint firstAttribute="trailing" secondItem="QDy-JK-fr7" secondAttribute="trailing" id="KlT-pR-5f8"/>
+                            <constraint firstAttribute="bottom" secondItem="UNK-CJ-SaY" secondAttribute="bottom" constant="15" id="S7f-AW-Xpf"/>
+                            <constraint firstAttribute="trailing" secondItem="UNK-CJ-SaY" secondAttribute="trailing" id="gg9-Ag-Bs4"/>
+                            <constraint firstItem="QDy-JK-fr7" firstAttribute="top" secondItem="4Ij-5a-XTP" secondAttribute="top" constant="7" id="mRO-GK-aUz"/>
+                            <constraint firstItem="QDy-JK-fr7" firstAttribute="leading" secondItem="4Ij-5a-XTP" secondAttribute="leading" id="zQQ-VC-ebC"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9NZ-5N-vei">
+                        <rect key="frame" x="80" y="60" width="80" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日新出房" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRJ-4H-Rwk">
+                                <rect key="frame" x="0.0" y="31.5" width="80" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFv-1e-rwp">
+                                <rect key="frame" x="0.0" y="7" width="80" height="17.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="12">
+                                        <attributes>
+                                            <color key="NSColor" red="0.94509803920000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name=".SFNSText"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="间">
+                                        <attributes>
+                                            <color key="NSColor" red="0.94509803921568625" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aRJ-4H-Rwk" secondAttribute="trailing" id="MyM-Ta-ick"/>
+                            <constraint firstItem="HFv-1e-rwp" firstAttribute="leading" secondItem="9NZ-5N-vei" secondAttribute="leading" id="QL8-Jp-pkJ"/>
+                            <constraint firstAttribute="bottom" secondItem="aRJ-4H-Rwk" secondAttribute="bottom" constant="15" id="Rez-4H-hmJ"/>
+                            <constraint firstItem="HFv-1e-rwp" firstAttribute="top" secondItem="9NZ-5N-vei" secondAttribute="top" constant="7" id="ZRR-Th-ylh"/>
+                            <constraint firstItem="aRJ-4H-Rwk" firstAttribute="leading" secondItem="9NZ-5N-vei" secondAttribute="leading" id="ocF-a6-Fri"/>
+                            <constraint firstAttribute="trailing" secondItem="HFv-1e-rwp" secondAttribute="trailing" id="v1I-kG-AfZ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UFJ-8O-3U1">
+                        <rect key="frame" x="160" y="60" width="80" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日新出房" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZG-Kc-4IM">
+                                <rect key="frame" x="0.0" y="31.5" width="80" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2h-kJ-89e">
+                                <rect key="frame" x="0.0" y="7" width="80" height="17.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="12">
+                                        <attributes>
+                                            <color key="NSColor" red="0.94509803920000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name=".SFNSText"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="间">
+                                        <attributes>
+                                            <color key="NSColor" red="0.94509803921568625" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="AZG-Kc-4IM" firstAttribute="leading" secondItem="UFJ-8O-3U1" secondAttribute="leading" id="Dsf-GA-4US"/>
+                            <constraint firstAttribute="trailing" secondItem="AZG-Kc-4IM" secondAttribute="trailing" id="MKP-zH-rlE"/>
+                            <constraint firstItem="U2h-kJ-89e" firstAttribute="top" secondItem="UFJ-8O-3U1" secondAttribute="top" constant="7" id="QLE-HB-VRc"/>
+                            <constraint firstAttribute="bottom" secondItem="AZG-Kc-4IM" secondAttribute="bottom" constant="15" id="akW-c4-VlD"/>
+                            <constraint firstItem="U2h-kJ-89e" firstAttribute="leading" secondItem="UFJ-8O-3U1" secondAttribute="leading" id="jvb-f5-m3B"/>
+                            <constraint firstAttribute="trailing" secondItem="U2h-kJ-89e" secondAttribute="trailing" id="odc-yI-PXq"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mWH-8s-027">
+                        <rect key="frame" x="240" y="60" width="80" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日新出房" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTM-gz-mKp">
+                                <rect key="frame" x="0.0" y="31.5" width="80" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yly-n9-tFA">
+                                <rect key="frame" x="0.0" y="7" width="80" height="17.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="12">
+                                        <attributes>
+                                            <color key="NSColor" red="0.94509803920000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name=".SFNSText"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="间">
+                                        <attributes>
+                                            <color key="NSColor" red="0.94509803921568625" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="zTM-gz-mKp" firstAttribute="leading" secondItem="mWH-8s-027" secondAttribute="leading" id="0D3-dH-anB"/>
+                            <constraint firstAttribute="trailing" secondItem="zTM-gz-mKp" secondAttribute="trailing" id="7vB-04-qpL"/>
+                            <constraint firstAttribute="trailing" secondItem="yly-n9-tFA" secondAttribute="trailing" id="GBU-d8-ZdY"/>
+                            <constraint firstAttribute="bottom" secondItem="zTM-gz-mKp" secondAttribute="bottom" constant="15" id="SWn-An-nlc"/>
+                            <constraint firstItem="yly-n9-tFA" firstAttribute="top" secondItem="mWH-8s-027" secondAttribute="top" constant="7" id="Y3G-KS-3Yo"/>
+                            <constraint firstItem="yly-n9-tFA" firstAttribute="leading" secondItem="mWH-8s-027" secondAttribute="leading" id="k4E-Eg-B7k"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zgl-QY-WOY">
+                        <rect key="frame" x="80" y="0.0" width="80" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日新出房" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vy-9v-6mA">
+                                <rect key="frame" x="0.0" y="39.5" width="80" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3L-Fs-xdE">
+                                <rect key="frame" x="0.0" y="15" width="80" height="17.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="12">
+                                        <attributes>
+                                            <color key="NSColor" red="0.94509803920000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name=".SFNSText"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="间">
+                                        <attributes>
+                                            <color key="NSColor" red="0.94509803921568625" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="w3L-Fs-xdE" firstAttribute="top" secondItem="Zgl-QY-WOY" secondAttribute="top" constant="15" id="OxP-8e-c3y"/>
+                            <constraint firstAttribute="trailing" secondItem="8vy-9v-6mA" secondAttribute="trailing" id="iMp-cV-xdg"/>
+                            <constraint firstAttribute="trailing" secondItem="w3L-Fs-xdE" secondAttribute="trailing" id="jJT-wG-tWN"/>
+                            <constraint firstItem="8vy-9v-6mA" firstAttribute="leading" secondItem="Zgl-QY-WOY" secondAttribute="leading" id="qu0-3d-TDG"/>
+                            <constraint firstAttribute="bottom" secondItem="8vy-9v-6mA" secondAttribute="bottom" constant="7" id="rpg-1S-76g"/>
+                            <constraint firstItem="w3L-Fs-xdE" firstAttribute="leading" secondItem="Zgl-QY-WOY" secondAttribute="leading" id="vNc-Te-qD6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9NZ-5N-vei" firstAttribute="height" secondItem="4Ij-5a-XTP" secondAttribute="height" id="7gU-il-nGl"/>
+                    <constraint firstAttribute="bottom" secondItem="UFJ-8O-3U1" secondAttribute="bottom" id="9RA-rG-ia9"/>
+                    <constraint firstItem="mWH-8s-027" firstAttribute="width" secondItem="4Ij-5a-XTP" secondAttribute="width" id="ARM-Rv-5kC"/>
+                    <constraint firstItem="UFJ-8O-3U1" firstAttribute="leading" secondItem="9NZ-5N-vei" secondAttribute="trailing" id="Apb-qc-8v8"/>
+                    <constraint firstItem="mWH-8s-027" firstAttribute="height" secondItem="4Ij-5a-XTP" secondAttribute="height" id="B6T-56-hKt"/>
+                    <constraint firstItem="zSC-IW-DN8" firstAttribute="height" secondItem="8dU-oN-SkL" secondAttribute="height" id="CW3-m1-WUb"/>
+                    <constraint firstItem="mWH-8s-027" firstAttribute="height" secondItem="UFJ-8O-3U1" secondAttribute="height" id="J69-du-17Q"/>
+                    <constraint firstItem="qfS-fh-U5i" firstAttribute="leading" secondItem="Zgl-QY-WOY" secondAttribute="trailing" id="KSm-zr-p1c"/>
+                    <constraint firstItem="Zgl-QY-WOY" firstAttribute="width" secondItem="8dU-oN-SkL" secondAttribute="width" id="Kwx-1P-fuh"/>
+                    <constraint firstItem="zSC-IW-DN8" firstAttribute="height" secondItem="qfS-fh-U5i" secondAttribute="height" id="MnN-Gm-iRZ"/>
+                    <constraint firstAttribute="bottom" secondItem="9NZ-5N-vei" secondAttribute="bottom" id="Tdy-fH-Cbv"/>
+                    <constraint firstItem="9NZ-5N-vei" firstAttribute="width" secondItem="4Ij-5a-XTP" secondAttribute="width" id="VX7-rv-FyN"/>
+                    <constraint firstItem="zSC-IW-DN8" firstAttribute="width" secondItem="8dU-oN-SkL" secondAttribute="width" id="VeA-lW-JsF"/>
+                    <constraint firstItem="9NZ-5N-vei" firstAttribute="leading" secondItem="4Ij-5a-XTP" secondAttribute="trailing" id="Wgj-ej-mCv"/>
+                    <constraint firstItem="8dU-oN-SkL" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="1:4" id="Wtm-DR-udt"/>
+                    <constraint firstItem="Zgl-QY-WOY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZSq-a8-tvf"/>
+                    <constraint firstItem="Zgl-QY-WOY" firstAttribute="height" secondItem="8dU-oN-SkL" secondAttribute="height" id="ar3-PS-xDB"/>
+                    <constraint firstAttribute="bottom" secondItem="mWH-8s-027" secondAttribute="bottom" id="dHE-Vj-30x"/>
+                    <constraint firstItem="mWH-8s-027" firstAttribute="width" secondItem="UFJ-8O-3U1" secondAttribute="width" id="eCX-rM-Y4a"/>
+                    <constraint firstItem="4Ij-5a-XTP" firstAttribute="top" secondItem="8dU-oN-SkL" secondAttribute="bottom" id="ef8-SX-zgU"/>
+                    <constraint firstAttribute="bottom" secondItem="4Ij-5a-XTP" secondAttribute="bottom" id="exV-KZ-4nt"/>
+                    <constraint firstItem="mWH-8s-027" firstAttribute="leading" secondItem="UFJ-8O-3U1" secondAttribute="trailing" id="f3a-QD-YIQ"/>
+                    <constraint firstItem="mWH-8s-027" firstAttribute="leading" secondItem="UFJ-8O-3U1" secondAttribute="trailing" id="gLr-er-KtL"/>
+                    <constraint firstItem="8dU-oN-SkL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gh6-fI-okG"/>
+                    <constraint firstItem="8dU-oN-SkL" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="1:2" id="iwl-Zy-0VF"/>
+                    <constraint firstItem="8dU-oN-SkL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kLt-0N-HJc"/>
+                    <constraint firstItem="zSC-IW-DN8" firstAttribute="leading" secondItem="qfS-fh-U5i" secondAttribute="trailing" id="l0k-nP-sWf"/>
+                    <constraint firstAttribute="trailing" secondItem="zSC-IW-DN8" secondAttribute="trailing" id="nWr-sg-aDs"/>
+                    <constraint firstItem="4Ij-5a-XTP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="omG-Lh-WOf"/>
+                    <constraint firstItem="UFJ-8O-3U1" firstAttribute="leading" secondItem="9NZ-5N-vei" secondAttribute="trailing" id="one-iU-OnK"/>
+                    <constraint firstItem="zSC-IW-DN8" firstAttribute="width" secondItem="qfS-fh-U5i" secondAttribute="width" id="php-PK-6hq"/>
+                    <constraint firstItem="zSC-IW-DN8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="r7h-2e-jG2"/>
+                    <constraint firstItem="9NZ-5N-vei" firstAttribute="top" secondItem="Zgl-QY-WOY" secondAttribute="bottom" id="rYe-w6-5Y6"/>
+                    <constraint firstItem="qfS-fh-U5i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="siV-9e-ZuU"/>
+                    <constraint firstItem="mWH-8s-027" firstAttribute="top" secondItem="zSC-IW-DN8" secondAttribute="bottom" id="y42-Bb-WfX"/>
+                    <constraint firstAttribute="trailing" secondItem="mWH-8s-027" secondAttribute="trailing" id="zHR-Yr-KVj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="-128" y="-119"/>
+        </tableViewCell>
+    </objects>
+</document>
