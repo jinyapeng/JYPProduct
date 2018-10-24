@@ -1,0 +1,23 @@
+
+platform :ios, '9.0'
+
+target 'JYPProduct' do
+
+  pod 'Masonry'
+  pod 'MJExtension'
+  pod 'MJRefresh'
+  pod 'IQKeyboardManager' # 键盘
+  pod 'ReactiveObjC'      # 详解 http://www.jianshu.com/p/0845b1a07bfa
+  pod 'AFNetworking'
+  pod 'YYModel'
+  pod 'LYEmptyView'       # https://github.com/dev-liyang/LYEmptyView
+
+  pod 'AMap3DMap'         # 高德地图
+  pod 'AMapNavi'
+  pod 'AMapSearch'
+  pod 'AMapLocation'
+  pod 'BmobSDK'           # 数据存储、短信、云引擎调用等基础服务模块
+  
+  pod 'MBProgressHUD'
+  
+end

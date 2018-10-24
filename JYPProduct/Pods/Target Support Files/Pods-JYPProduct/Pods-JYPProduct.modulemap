@@ -1,0 +1,6 @@
+framework module Pods_JYPProduct {
+  umbrella header "Pods-JYPProduct-umbrella.h"
+
+  export *
+  module * { export * }
+}
