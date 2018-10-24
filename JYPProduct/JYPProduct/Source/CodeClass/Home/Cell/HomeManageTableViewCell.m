@@ -102,6 +102,22 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
         [self.viewController.navigationController pushViewControllerStringMu:NameToString(RegistHousingVController) animated:YES parameters:nil];
     }else if ([title isEqualToString:@"合租"]){
         [self.viewController.navigationController pushViewControllerStringMu:NameToString(HUDManagerViewController) animated:YES parameters:nil];
+    }else if ([title isEqualToString:@"集中整租"]){
+        [self.viewController.navigationController pushViewControllerStringMu:NameToString(DemoViewController2) animated:YES parameters:nil];
+    }else if ([title isEqualToString:@"审批"]){
+        [self.viewController.navigationController pushViewControllerStringMu:NameToString(ManualModeViewController) animated:YES parameters:nil];
+    }else if ([title isEqualToString:@"考勤"]){
+        [self.viewController.navigationController pushViewControllerStringMu:NameToString(FocusHousingListController) animated:YES parameters:^(NSMutableDictionary *dict) {
+            
+        }];
+    }else if ([title isEqualToString:@"日志"]){
+        [self.viewController.navigationController pushViewControllerStringMu:NameToString(AMapViewController) animated:YES parameters:^(NSMutableDictionary *dict) {
+            
+        }];
+    }else if ([title isEqualToString:@"微信管理"]){
+        [self.viewController.navigationController pushViewControllerStringMu:NameToString(ChartsViewController) animated:YES parameters:^(NSMutableDictionary *dict) {
+            
+        }];
     }
         
     

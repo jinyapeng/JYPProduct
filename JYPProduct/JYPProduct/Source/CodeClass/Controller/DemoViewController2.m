@@ -8,17 +8,14 @@
 
 #import "DemoViewController2.h"
 #import "DemoTableViewCell.h"
-#import "RegistHousingVController.h"
 
 @interface DemoViewController2 ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollerView;
 
 @property (nonatomic,strong)NSMutableArray *dataSource;
 
 @property (nonatomic, assign) NSInteger index;
-@property (weak, nonatomic) IBOutlet UIView *view2;
 
 @end
 
@@ -27,21 +24,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.scrollerView.contentSize = CGSizeMake(KWIDTH, 1000);
-    
-//    [self.scrollerView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.bottom.equalTo(self.view2.mas_bottom).offset(10);
-//    }];
-    
-//    [self.scrollerView mas_updateConstraints:^(MASConstraintMaker *make) {
-//        make.bottom.equalTo(self.view2.mas_bottom).offset(10);
-//    }];
-    
-    
     [self initUIView];
     
-    [JYPLogLoadingView showInView:self.view];
-    [self requestData];
+   // [JYPLogLoadingView showInView:self.view];
+    
+    
+    [self.tableView.mj_header beginRefreshing];
 }
 
 - (void)initUIView
@@ -90,7 +78,7 @@
         [self.dataSource addObjectsFromArray:arr];
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            [JYPLogLoadingView dismissInView:self.view];
+         //   [JYPLogLoadingView dismissInView:self.view];
             
             [self.tableView reloadData];
             [self.tableView.mj_header endRefreshing];
@@ -109,8 +97,9 @@
 
 - (void)rightBarBtnAction
 {
-    RegistHousingVController *VC = [[RegistHousingVController alloc] init];
-    [self.navigationController pushViewController:VC animated:YES];
+    [self.navigationController pushViewControllerStringMu:NameToString(RegistHousingVController) animated:YES parameters:^(NSMutableDictionary *dict) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

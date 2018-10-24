@@ -40,8 +40,8 @@
     [self.titleLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(self.mas_bottom);
         make.centerX.equalTo(self.mas_centerX);
-        make.width.mas_equalTo(100);
-        make.height.mas_equalTo(44);
+        make.size.mas_equalTo(CGSizeMake(100, 44));
+//        make.height.mas_equalTo(44);
     }];
     
     // 定位按钮

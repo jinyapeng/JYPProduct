@@ -12,7 +12,7 @@
 
 + (float)navigationBarHeight
 {
-    if (iPhoneX) {
+    if (kiPhoneXAll) {
         return 88.f;
     }
     return 64.f;
@@ -20,7 +20,7 @@
 
 + (float)tabBarHeight
 {
-    if (iPhoneX) {
+    if (kiPhoneXAll) {
         return 83.f;
     }
     return 49.f;

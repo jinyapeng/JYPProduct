@@ -36,6 +36,16 @@
 /** 设备是否为iPhone X 分辨率373x812，像素1125x2436，@3x */
 #define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
+/** 设备是否为iPhone XR 分辨率414x896，像素828x1792，@2x */
+#define iPhoneXR ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) : NO)
+
+/** 设备是否为iPhone Xs Max 分辨率414x896，像素1125x2436，@3x */
+#define iPhoneXS_Max ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+#define kiPhoneXAll ([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896)
+
+
 /***************************系统版本*****************************/
 
 //获取手机系统的版本

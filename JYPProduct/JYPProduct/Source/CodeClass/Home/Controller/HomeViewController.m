@@ -35,12 +35,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-
     // 设置导航控制器的代理为self
     self.navigationController.delegate = self;
     self.homeUIService = [[HomeUIService alloc] initWithVC:self];
 
-    
 }
 
 /**

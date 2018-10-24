@@ -134,16 +134,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if (indexPath.section == 1) {
-        [self.homeVC.navigationController pushViewControllerStringMu:NameToString(DemoViewController2) animated:YES parameters:nil];
-    }else if (indexPath.section == 2){
-        [self.homeVC.navigationController pushViewControllerStringMu:NameToString(ManualModeViewController) animated:YES parameters:nil];
-    }else if (indexPath.section == 3){
-        [self.homeVC.navigationController pushViewControllerStringMu:NameToString(FocusHousingListController) animated:YES parameters:^(NSMutableDictionary *dict) {
-            
-        }];
-    }
-    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
