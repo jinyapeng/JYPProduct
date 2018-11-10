@@ -43,7 +43,9 @@
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    [self.tableView registerNib:[UINib nibWithNibName:@"DemoTableViewCell" bundle:nil] forCellReuseIdentifier:DemoTableViewCellID];
+    self.tableView.estimatedRowHeight = 10;
+   // self.tableView.rowHeight = UITableViewAutomaticDimension;
+    [self.tableView registerNib:[UINib nibWithNibName:@"DemoTableViewCell" bundle:nil] forCellReuseIdentifier:kDemoTableViewCellID];
     self.tableView.ly_emptyView = [JYPDIYEmpty diyNoNetworkEmptyWithTarget:self action:@selector(addObjectAction)];
     
     //pull request
@@ -119,25 +121,26 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    DemoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:DemoTableViewCellID];
-    cell.titleLab.text = [NSString stringWithFormat:@"第%ld组  第%ld行",indexPath.section,indexPath.row];
+    DemoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kDemoTableViewCellID];
+    // cell.titleLab.text = [NSString stringWithFormat:@"第%ld组  第%ld行",indexPath.section,indexPath.row];
+    cell.titleLab.text = @"UITableViewAutomaticDimensionUITableViewAutomaticDimensionUITableViewAutomaticDimensionUITableViewAutomaticDimensionUITableViewAutomaticDimensionUITableViewAutomaticDimension";
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 50;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return UITableViewAutomaticDimension;
+//}
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    return 10;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-{
-    return 0.001;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+//{
+//    return 10;
+//}
+//
+//- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+//{
+//    return 0.001;
+//}
 
 
 @end

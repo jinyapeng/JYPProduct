@@ -30,7 +30,7 @@
 
 - (void)hideMthod {
     
-    NSLog(@"----右上角----");
+    NSLog(@"----右上角--");
     [XWHUDManager hide];
 }
 

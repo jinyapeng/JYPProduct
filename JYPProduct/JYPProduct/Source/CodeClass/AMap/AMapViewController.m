@@ -131,8 +131,6 @@
     self.search = [[AMapSearchAPI alloc] init];
     self.search.delegate = self;
     
-    
-
 }
 
 /**

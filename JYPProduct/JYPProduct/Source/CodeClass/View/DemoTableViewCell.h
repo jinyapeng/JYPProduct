@@ -8,10 +8,13 @@
 
 #import "BaseTableViewCell.h"
 
-#define DemoTableViewCellID @"DemoTableViewCell"
+#define kDemoTableViewCellID       @"DemoTableViewCell"
 
 @interface DemoTableViewCell : BaseTableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLab;
+
+@property (nonatomic,copy) NSString *copysign;
+
 
 @end

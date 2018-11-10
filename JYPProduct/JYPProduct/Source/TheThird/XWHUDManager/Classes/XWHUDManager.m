@@ -438,6 +438,7 @@ static NSTimer * kXWHUDkHideHUDTimer;
 /// 全局统一生成提示框对象
 + (MBProgressHUD *)p_createMBProgressHUDviewWithMessage:(NSString*)message isWindiw:(BOOL)isWindow {
     UIView *view = isWindow ? [self p_getKeyWindow] : [self p_getCurrentUIVC].view;
+   
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.defaultMotionEffectsEnabled = NO;
     hud.removeFromSuperViewOnHide = YES;

@@ -19,5 +19,8 @@ target 'JYPProduct' do
   pod 'BmobSDK'           # 数据存储、短信、云引擎调用等基础服务模块
   
   pod 'MBProgressHUD'
+  pod 'PNChart'
+  
+  
   
 end
