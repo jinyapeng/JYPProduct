@@ -36,9 +36,7 @@
 
 - (void)p_setView
 {
-    
     //11111
-   
     WEAK// 区域
     self.areaView = [RegistHoisingItem btnItemWithTitle:@"区       域" isMust:YES handler:^{
         STRONG

@@ -36,7 +36,7 @@
     itemView.space = 10;
     [itemView setSeparatorLineType:SeparatorLineTypeCenterShortTop];
     [itemView setNeedsDisplay];
-   // 史蒂夫睡个好觉可饿疯够范儿个人个恶地方。
+   
     /**
      * 标题
      */

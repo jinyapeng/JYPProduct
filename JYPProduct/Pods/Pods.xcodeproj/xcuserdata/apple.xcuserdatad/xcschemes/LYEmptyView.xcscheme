@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F6B1FF7E47B8FA91D5E54460F184D22B"
+               BlueprintIdentifier = "55876898DA98BEC1AB50AD5EC3FEF272"
                BlueprintName = "LYEmptyView"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libLYEmptyView.a">

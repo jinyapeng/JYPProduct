@@ -35,7 +35,7 @@
 - (void)initUIView
 {
     WEAK
-    self.dataSource = [NSMutableArray new];
+    self.dataSource = [NSMutableArray arrayWithObjects:@"数据", nil];
     
     self.navigationItem.title = @"列表";
     [self addRightBarButtonWithFirstImage:[UIImage imageNamed:@"Bar_add"] action:@selector(rightBarBtnAction)];
@@ -43,7 +43,7 @@
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableView.estimatedRowHeight = 10;
+    self.tableView.estimatedRowHeight = 40;
    // self.tableView.rowHeight = UITableViewAutomaticDimension;
     [self.tableView registerNib:[UINib nibWithNibName:@"DemoTableViewCell" bundle:nil] forCellReuseIdentifier:kDemoTableViewCellID];
     self.tableView.ly_emptyView = [JYPDIYEmpty diyNoNetworkEmptyWithTarget:self action:@selector(addObjectAction)];
@@ -116,14 +116,15 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.dataSource.count;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     DemoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kDemoTableViewCellID];
     // cell.titleLab.text = [NSString stringWithFormat:@"第%ld组  第%ld行",indexPath.section,indexPath.row];
-    cell.titleLab.text = @"UITableViewAutomaticDimensionUITableViewAutomaticDimensionUITableViewAutomaticDimensionUITableViewAutomaticDimensionUITableViewAutomaticDimensionUITableViewAutomaticDimension";
+    cell.titleLab.text = [NSString stringWithFormat:@"UITableViewCell %ld",indexPath.row];
+    
     return cell;
 }
 
@@ -132,15 +133,15 @@
 //    return UITableViewAutomaticDimension;
 //}
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-//{
-//    return 10;
-//}
-//
-//- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-//{
-//    return 0.001;
-//}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 10;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 0.001;
+}
 
 
 @end

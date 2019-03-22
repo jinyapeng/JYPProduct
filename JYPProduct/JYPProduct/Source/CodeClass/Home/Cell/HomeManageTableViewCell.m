@@ -119,6 +119,13 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
             
         }];
     }
+    else {
+        
+        [self.viewController.navigationController pushViewControllerStringMu:NameToString(CollectionViewController) animated:YES parameters:^(NSMutableDictionary *dict) {
+            
+        }];
+        
+    }
         
     
 }

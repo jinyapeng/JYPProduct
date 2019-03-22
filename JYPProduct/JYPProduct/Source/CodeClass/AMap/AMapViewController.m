@@ -14,6 +14,8 @@
 // 设置公司经纬度
 #define kLatitude 29.538061
 #define kLongitude  106.506818
+#define kRadius       500
+
 
 @interface AMapViewController ()<MAMapViewDelegate,AMapSearchDelegate>
 
@@ -41,6 +43,9 @@
 // 有多少个打卡范围(可拓展不同地方打卡)
 @property (nonatomic, copy)NSMutableArray *circles;
 
+@property (nonatomic) CLLocationCoordinate2D lastCoordinate;
+
+
 @end
 
 @implementation AMapViewController
@@ -54,7 +59,7 @@
     
     
     NSMutableArray *arr = [NSMutableArray array];
-    MACircle *circle1 = [MACircle circleWithCenterCoordinate:CLLocationCoordinate2DMake(kLatitude, kLongitude) radius:1000];
+    MACircle *circle1 = [MACircle circleWithCenterCoordinate:CLLocationCoordinate2DMake(kLatitude, kLongitude) radius:kRadius];
     [arr addObject:circle1];
     [self.circles addObjectsFromArray:arr];
     
@@ -86,11 +91,11 @@
      */
     [self initCenterView];
     
-    self.mapView.zoomLevel = 14;              /// 缩放级别（默认3-19，有室内地图时为3-20）,级别越大，显示的越精确
+    self.mapView.zoomLevel = 17;              /// 缩放级别（默认3-19，有室内地图时为3-20）,级别越大，显示的越精确
     self.mapView.showsUserLocation = YES;     /// 是否显示用户位置
     self.mapView.showsCompass = YES;          /// 是否显示指南针
     self.mapView.showsScale   = YES;          /// 是否显示比例尺
-    self.mapView.minZoomLevel = 4;            /// 限制最小缩放级别
+    self.mapView.minZoomLevel = 3;            /// 限制最小缩放级别
     
     
     // 将绘制的图形添加到地图上
@@ -133,6 +138,8 @@
     
 }
 
+
+#pragma mark - mapView delegate
 /**
  * @brief 根据overlay生成对应的Renderer
  * @param mapView 地图View
@@ -166,8 +173,17 @@
     return nil;
 }
 
-
-#pragma mark - MapViewDelegate
+/**
+ * @brief 地图区域即将改变时会调用此接口
+ * @param mapView 地图View
+ * @param animated 是否动画
+ */
+- (void)mapView:(MAMapView *)mapView regionWillChangeAnimated:(BOOL)animated {
+    
+    self.lastCoordinate = self.mapView.centerCoordinate;
+    
+    
+}
 
 /**
  * @brief 地图区域改变过程中会调用此接口 since 4.6.0
@@ -187,11 +203,10 @@
 {
     self.centerImageView.alpha = 1.0;
    
-    NSLog(@"%f     %f",self.mapView.centerCoordinate.latitude,self.mapView.centerCoordinate.longitude);
-    
     // 防止重复点击
     if (!self.isMapViewRegionChangedFromTableView && self.mapView.userTrackingMode == MAUserTrackingModeNone)
     {
+        NSLog(@"%f     %f",self.mapView.centerCoordinate.latitude,self.mapView.centerCoordinate.longitude);
         // 重新检索周边区域
         [self actionSearchAroundAt:self.mapView.centerCoordinate];
     }
@@ -203,16 +218,25 @@
  */
 - (void)actionSearchAroundAt:(CLLocationCoordinate2D)coordinate
 {
+
+    if (self.mapView.centerCoordinate.latitude == self.lastCoordinate.latitude && self.mapView.centerCoordinate.longitude == self.lastCoordinate.longitude) {
+        NSLog(@"相等");
+    }else{
+        
+        NSLog(@"----不相等");
+        [self.mapView removeOverlays:self.circles];
+        [self.circles removeAllObjects];
+        
+        MACircle *circle = [MACircle circleWithCenterCoordinate:CLLocationCoordinate2DMake(coordinate.latitude, coordinate.longitude) radius:kRadius];
+        [self.circles addObject:circle];
+        
+        // 将绘制的图形添加到地图上
+        [self.mapView addOverlays:self.circles];
+    }
+    
+    
     [self searchReGeocodeWithCoordinate:coordinate];
     [self searchPoiWithCenterCoordinate:coordinate];
-
-    
-    [self.mapView removeOverlays:self.circles];
-    [self.circles removeAllObjects];
-    
-    MACircle *circle = [MACircle circleWithCenterCoordinate:CLLocationCoordinate2DMake(coordinate.latitude, coordinate.longitude) radius:1000];
-    [self.circles addObject:circle];
-    
     
     [self centerAnnotationAnimimate];
 }
@@ -272,8 +296,8 @@
 
     request.location = [AMapGeoPoint locationWithLatitude:coord.latitude  longitude:coord.longitude];
 
-    request.radius   = 1000;            /// 搜索范围 （可自定义）
-    request.types    = @"学校";          /// 搜索类型 （可自定义 @[@"住宅", @"学校", @"楼宇", @"商场"] 等）
+    request.radius   = kRadius;            /// 搜索范围 （可自定义）
+    request.types    = @"楼宇";          /// 搜索类型 （可自定义 @[@"住宅", @"学校", @"楼宇", @"商场"] 等）
     request.sortrule = 0;               /// 排序规则
 
     [self.search AMapPOIAroundSearch:request];
@@ -299,21 +323,16 @@
  */
 - (void)onPOISearchDone:(AMapPOISearchBaseRequest *)request response:(AMapPOISearchResponse *)response
 {
-    
-    
     [self.mapView removeAnnotations:self.searchPoiArray];
     [self.searchPoiArray removeAllObjects];
-    
-    
     
     if (response.pois.count == 0)
     {
         return;
     }
     
-    
     //解析response获取POI信息，具体解析见 Demo
-    NSLog(@" >>> %@",response.pois);
+  //  NSLog(@" >>> %@",response.pois);
     
     [response.pois enumerateObjectsUsingBlock:^(AMapPOI *obj, NSUInteger idx, BOOL *stop) {
         
@@ -323,7 +342,7 @@
         [annotation setTitle:[NSString stringWithFormat:@"%@ - %ld米", obj.name, (long)obj.distance]];
         [annotation setSubtitle:obj.address];
         
-        NSLog(@"%@   %@",obj.address,annotation.title);
+  //      NSLog(@"%@   %@",obj.address,annotation.title);
         
         [self.searchPoiArray addObject:annotation];
     }];
@@ -341,8 +360,7 @@
     [self.mapView addAnnotations:self.searchPoiArray];
     
     
-    // 将绘制的图形添加到地图上
-    [self.mapView addOverlays:self.circles];
+    
     
     
    
@@ -400,6 +418,8 @@
                          [self.centerImageView setCenter:center];}
                      completion:nil];
 
+    
+    
     [UIView animateWithDuration:0.45
                           delay:0
                         options:UIViewAnimationOptionCurveEaseIn

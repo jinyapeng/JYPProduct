@@ -55,5 +55,11 @@ make.bottom.equalTo(self.view.mas_bottom);\
 }
 
 
+// 防止重复点击
+#define kPreventRepeatClickTime(seconds) \
+static BOOL shouldPrevent; \if (shouldPrevent) return; \shouldPrevent = YES; \ dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((seconds) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{ \ shouldPrevent = NO; \ });
+
+
+
 
 #endif

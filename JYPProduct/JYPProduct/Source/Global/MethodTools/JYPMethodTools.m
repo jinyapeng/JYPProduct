@@ -51,12 +51,12 @@
     headerView.lastUpdatedTimeLabel.hidden = YES;
     
     // 隐藏状态
-    headerView.stateLabel.hidden = YES;
+    headerView.stateLabel.hidden = NO;
     
     NSString *title = @"让采购更便捷";;
-    NSString *stateString1 = [NSString stringWithFormat:@"%@下拉更新...",title];
-    NSString *stateString2 = [NSString stringWithFormat:@"%@松开更新...",title];
-    NSString *stateString3 = [NSString stringWithFormat:@"%@更新中...",title];
+    NSString *stateString1 = [NSString stringWithFormat:@"%@\n下拉更新...",title];
+    NSString *stateString2 = [NSString stringWithFormat:@"%@\n松开更新...",title];
+    NSString *stateString3 = [NSString stringWithFormat:@"%@\n更新中...",title];
     [headerView setTitle:stateString1 forState:MJRefreshStateIdle];
     [headerView setTitle:stateString2 forState:MJRefreshStatePulling];
     [headerView setTitle:stateString3 forState:MJRefreshStateRefreshing];

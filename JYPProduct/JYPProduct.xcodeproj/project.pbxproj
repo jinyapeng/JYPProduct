@@ -17,6 +17,8 @@
 		1805041F20A3054B004839E3 /* APPViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805041E20A3054B004839E3 /* APPViewModel.m */; };
 		180A983220BE778600124564 /* JYPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 180A983120BE778600124564 /* JYPTabBar.m */; };
 		180A983820BE78B700124564 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180A983720BE78B700124564 /* BaseTabBarController.m */; };
+		180FCB67222FA5780003B4A1 /* ContentListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 180FCB66222FA5780003B4A1 /* ContentListTableViewCell.m */; };
+		180FCB6A222FA6530003B4A1 /* ContentItemview.m in Sources */ = {isa = PBXBuildFile; fileRef = 180FCB69222FA6530003B4A1 /* ContentItemview.m */; };
 		181AD76321800CDB007FAD2C /* wildcat_gif_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 181AD75C21800CDB007FAD2C /* wildcat_gif_2@2x.png */; };
 		181AD76421800CDB007FAD2C /* wildcat_gif_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 181AD75D21800CDB007FAD2C /* wildcat_gif_3@2x.png */; };
 		181AD76521800CDB007FAD2C /* loading@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 181AD75E21800CDB007FAD2C /* loading@2x.gif */; };
@@ -54,6 +56,7 @@
 		183B10202099C45600FB306E /* Model_User.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B101F2099C45600FB306E /* Model_User.m */; };
 		1842DC8920F48FA5003D8167 /* NSDate+Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DC8820F48FA5003D8167 /* NSDate+Product.m */; };
 		1842DC8D20F4AA10003D8167 /* NSDate+Mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842DC8C20F4AA10003D8167 /* NSDate+Mac.m */; };
+		1845368F222E77A8004AF958 /* UIButton+FixMultiClick.m in Sources */ = {isa = PBXBuildFile; fileRef = 1845368E222E77A8004AF958 /* UIButton+FixMultiClick.m */; };
 		1848086D212C0A9C006BCEAD /* ManualModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1848086B212C0A9C006BCEAD /* ManualModeViewController.m */; };
 		1848086E212C0A9C006BCEAD /* ManualModeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1848086C212C0A9C006BCEAD /* ManualModeViewController.xib */; };
 		18480873212C0DB6006BCEAD /* ManualModeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18480871212C0DB6006BCEAD /* ManualModeTableViewCell.m */; };
@@ -73,6 +76,9 @@
 		184B80AE20C9313300B69A9E /* HomeCensusTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B80AC20C9313300B69A9E /* HomeCensusTableViewCell.m */; };
 		184B80AF20C9313300B69A9E /* HomeCensusTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184B80AD20C9313300B69A9E /* HomeCensusTableViewCell.xib */; };
 		18572F5620B56E930047651F /* UINavigationController+NavigationExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18572F5520B56E930047651F /* UINavigationController+NavigationExtension.m */; };
+		185872692240CD6000AEFD45 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185872682240CD6000AEFD45 /* CollectionViewController.m */; };
+		1858726E2240CFAA00AEFD45 /* ItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1858726C2240CFAA00AEFD45 /* ItemCollectionViewCell.m */; };
+		1858726F2240CFAA00AEFD45 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1858726D2240CFAA00AEFD45 /* ItemCollectionViewCell.xib */; };
 		1861CDAB20C0F73400801277 /* AMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1861CDAA20C0F73400801277 /* AMapViewController.m */; };
 		1861CDAF20C1287D00801277 /* CurrentLocationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1861CDAE20C1287D00801277 /* CurrentLocationAnnotation.m */; };
 		186B9F9820A96BA300CC15F9 /* RegistHousingVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B9F9720A96BA300CC15F9 /* RegistHousingVController.m */; };
@@ -164,6 +170,10 @@
 		180A983120BE778600124564 /* JYPTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYPTabBar.m; sourceTree = "<group>"; };
 		180A983620BE78B700124564 /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
 		180A983720BE78B700124564 /* BaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		180FCB65222FA5780003B4A1 /* ContentListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentListTableViewCell.h; sourceTree = "<group>"; };
+		180FCB66222FA5780003B4A1 /* ContentListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentListTableViewCell.m; sourceTree = "<group>"; };
+		180FCB68222FA6530003B4A1 /* ContentItemview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentItemview.h; sourceTree = "<group>"; };
+		180FCB69222FA6530003B4A1 /* ContentItemview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentItemview.m; sourceTree = "<group>"; };
 		181AD75C21800CDB007FAD2C /* wildcat_gif_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wildcat_gif_2@2x.png"; sourceTree = "<group>"; };
 		181AD75D21800CDB007FAD2C /* wildcat_gif_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wildcat_gif_3@2x.png"; sourceTree = "<group>"; };
 		181AD75E21800CDB007FAD2C /* loading@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loading@2x.gif"; sourceTree = "<group>"; };
@@ -239,6 +249,8 @@
 		1842DC8A20F4A4FD003D8167 /* NSDateHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSDateHeader.h; sourceTree = "<group>"; };
 		1842DC8B20F4AA10003D8167 /* NSDate+Mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Mac.h"; sourceTree = "<group>"; };
 		1842DC8C20F4AA10003D8167 /* NSDate+Mac.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Mac.m"; sourceTree = "<group>"; };
+		1845368D222E77A8004AF958 /* UIButton+FixMultiClick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+FixMultiClick.h"; sourceTree = "<group>"; };
+		1845368E222E77A8004AF958 /* UIButton+FixMultiClick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FixMultiClick.m"; sourceTree = "<group>"; };
 		1848086A212C0A9C006BCEAD /* ManualModeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManualModeViewController.h; sourceTree = "<group>"; };
 		1848086B212C0A9C006BCEAD /* ManualModeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManualModeViewController.m; sourceTree = "<group>"; };
 		1848086C212C0A9C006BCEAD /* ManualModeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManualModeViewController.xib; sourceTree = "<group>"; };
@@ -270,6 +282,11 @@
 		184B80AD20C9313300B69A9E /* HomeCensusTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCensusTableViewCell.xib; sourceTree = "<group>"; };
 		18572F5420B56E930047651F /* UINavigationController+NavigationExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+NavigationExtension.h"; sourceTree = "<group>"; };
 		18572F5520B56E930047651F /* UINavigationController+NavigationExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+NavigationExtension.m"; sourceTree = "<group>"; };
+		185872672240CD6000AEFD45 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		185872682240CD6000AEFD45 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		1858726B2240CFAA00AEFD45 /* ItemCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemCollectionViewCell.h; sourceTree = "<group>"; };
+		1858726C2240CFAA00AEFD45 /* ItemCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemCollectionViewCell.m; sourceTree = "<group>"; };
+		1858726D2240CFAA00AEFD45 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		1861CDA820C0F5C600801277 /* ToolsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolsHeader.h; sourceTree = "<group>"; };
 		1861CDA920C0F73400801277 /* AMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMapViewController.h; sourceTree = "<group>"; };
 		1861CDAA20C0F73400801277 /* AMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMapViewController.m; sourceTree = "<group>"; };
@@ -550,6 +567,7 @@
 		183B0FDF2099B10800FB306E /* CodeClass */ = {
 			isa = PBXGroup;
 			children = (
+				185872662240CD3300AEFD45 /* CollectionView */,
 				18F40EDC217DC20900F08A4A /* 自定义提示框 */,
 				18480868212C0A4B006BCEAD /* ManualMode */,
 				186D1BD220C7ED1E00E8DFCE /* Home */,
@@ -590,6 +608,10 @@
 				1805041820A2FEAB004839E3 /* DemoTableViewCell.h */,
 				1805041920A2FEAB004839E3 /* DemoTableViewCell.m */,
 				1805041A20A2FEAB004839E3 /* DemoTableViewCell.xib */,
+				180FCB65222FA5780003B4A1 /* ContentListTableViewCell.h */,
+				180FCB66222FA5780003B4A1 /* ContentListTableViewCell.m */,
+				180FCB68222FA6530003B4A1 /* ContentItemview.h */,
+				180FCB69222FA6530003B4A1 /* ContentItemview.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -773,6 +795,8 @@
 				184B808B20C8D98C00B69A9E /* UIButton+LXMImagePosition.h */,
 				184B808A20C8D98C00B69A9E /* UIButton+LXMImagePosition.m */,
 				184B808D20C8D99900B69A9E /* UIButtonHeader.h */,
+				1845368D222E77A8004AF958 /* UIButton+FixMultiClick.h */,
+				1845368E222E77A8004AF958 /* UIButton+FixMultiClick.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -806,6 +830,18 @@
 				18572F5520B56E930047651F /* UINavigationController+NavigationExtension.m */,
 			);
 			path = UINavigationController;
+			sourceTree = "<group>";
+		};
+		185872662240CD3300AEFD45 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				185872672240CD6000AEFD45 /* CollectionViewController.h */,
+				185872682240CD6000AEFD45 /* CollectionViewController.m */,
+				1858726B2240CFAA00AEFD45 /* ItemCollectionViewCell.h */,
+				1858726C2240CFAA00AEFD45 /* ItemCollectionViewCell.m */,
+				1858726D2240CFAA00AEFD45 /* ItemCollectionViewCell.xib */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		1861CDA720C0F4FA00801277 /* AMap */ = {
@@ -1062,7 +1098,6 @@
 				183B0FA32099B0BE00FB306E /* Sources */,
 				183B0FA42099B0BE00FB306E /* Frameworks */,
 				183B0FA52099B0BE00FB306E /* Resources */,
-				FF36D821BE593D49A09C52EC /* [CP] Embed Pods Frameworks */,
 				20F81466E2DE3261262B1DBA /* [CP] Copy Pods Resources */,
 				184F9F6420F8553A00DD9DD5 /* Embed Frameworks */,
 			);
@@ -1189,6 +1224,7 @@
 				18F40ED6217DBF3400F08A4A /* XWHUDManager_right@2x.png in Resources */,
 				1805041C20A2FEAB004839E3 /* DemoTableViewCell.xib in Resources */,
 				18480874212C0DB6006BCEAD /* ManualModeTableViewCell.xib in Resources */,
+				1858726F2240CFAA00AEFD45 /* ItemCollectionViewCell.xib in Resources */,
 				183B0FB22099B0BE00FB306E /* Main.storyboard in Resources */,
 				184B80A520C91AE000B69A9E /* HomeManageHeaderView.xib in Resources */,
 			);
@@ -1243,47 +1279,14 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMapNavi.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JYPProduct/Pods-JYPProduct-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FF36D821BE593D49A09C52EC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-JYPProduct/Pods-JYPProduct-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
-				"${BUILT_PRODUCTS_DIR}/LYEmptyView/LYEmptyView.framework",
-				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
-				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LYEmptyView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JYPProduct/Pods-JYPProduct-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1298,6 +1301,7 @@
 				186B9F9E20A971C500CC15F9 /* RegistHoisingItem.m in Sources */,
 				18FC95D720A18F7300A52CC3 /* UINavigationController+SXFullScreen.m in Sources */,
 				1842DC8920F48FA5003D8167 /* NSDate+Product.m in Sources */,
+				180FCB67222FA5780003B4A1 /* ContentListTableViewCell.m in Sources */,
 				1842DC8D20F4AA10003D8167 /* NSDate+Mac.m in Sources */,
 				180A983220BE778600124564 /* JYPTabBar.m in Sources */,
 				18D6085220BFDB79001C6B9F /* JYPDIYEmpty.m in Sources */,
@@ -1313,6 +1317,7 @@
 				1805041620A2FCF1004839E3 /* DemoViewController2.m in Sources */,
 				183B0FBA2099B0BE00FB306E /* main.m in Sources */,
 				18FC95D520A18F7300A52CC3 /* UIBarButtonItem+SXCreate.m in Sources */,
+				180FCB6A222FA6530003B4A1 /* ContentItemview.m in Sources */,
 				183B101B2099C2CF00FB306E /* NSObject+JKRuntime.m in Sources */,
 				1837CBB9212D163800BCAFDF /* CGXAddressPcikerView.m in Sources */,
 				18FC95D820A18F7300A52CC3 /* UIViewController+BarButton.m in Sources */,
@@ -1327,6 +1332,7 @@
 				18FC95D420A18F7300A52CC3 /* NSObject+SXRuntime.m in Sources */,
 				1825CD2920AAD30500AEF292 /* UITextField+JKInputLimit.m in Sources */,
 				183B10162099C2CF00FB306E /* NSObjcet+MAC.m in Sources */,
+				1845368F222E77A8004AF958 /* UIButton+FixMultiClick.m in Sources */,
 				1805040C20A2F955004839E3 /* DrawUtil.m in Sources */,
 				18FC95BA20A189F800A52CC3 /* NSArray+SafeAccess.m in Sources */,
 				18F40EDB217DBF3400F08A4A /* XWHUDManager.m in Sources */,
@@ -1339,6 +1345,7 @@
 				184B808820C8C64900B69A9E /* HomeUIService.m in Sources */,
 				18D6085720BFE438001C6B9F /* JYPLogLoadingView.m in Sources */,
 				18572F5620B56E930047651F /* UINavigationController+NavigationExtension.m in Sources */,
+				1858726E2240CFAA00AEFD45 /* ItemCollectionViewCell.m in Sources */,
 				1837CBBD212D163800BCAFDF /* CGXPickerView.m in Sources */,
 				183B10172099C2CF00FB306E /* NSObject+Blocks.m in Sources */,
 				184B808C20C8D98C00B69A9E /* UIButton+LXMImagePosition.m in Sources */,
@@ -1354,6 +1361,7 @@
 				1837CBA5212D010100BCAFDF /* Model_Manual.m in Sources */,
 				184B80A320C91A9600B69A9E /* HomeManageHeaderView.m in Sources */,
 				1861CDAF20C1287D00801277 /* CurrentLocationAnnotation.m in Sources */,
+				185872692240CD6000AEFD45 /* CollectionViewController.m in Sources */,
 				18FC95BD20A18A0100A52CC3 /* NSArray+jlExtension.m in Sources */,
 				18FC95B920A189F800A52CC3 /* NSArray+Block.m in Sources */,
 				184B809C20C912A200B69A9E /* HomeNoticeTableViewCell.m in Sources */,

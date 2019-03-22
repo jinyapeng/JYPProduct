@@ -38,8 +38,8 @@
     [self addChildVC:VC1 title:@"出门" imageName:@"tabBar_02" selectImageName:@"tabBar_02Select"];
     
     // 通讯录
-    UIViewController *VC2 = ClassName(UIViewController);
-    [self addChildVC:VC2 title:@"通讯录" imageName:@"tabBar_03" selectImageName:@"tabBar_03Select"];
+//    UIViewController *VC2 = ClassName(UIViewController);
+//    [self addChildVC:VC2 title:@"通讯录" imageName:@"tabBar_03" selectImageName:@"tabBar_03Select"];
     
     // 设置
     UIViewController *VC3 = ClassName(UIViewController);
@@ -62,6 +62,7 @@
     [barBarItem setTitleTextAttributes:normalDict forState:UIControlStateNormal];
 }
 
+
 -(void)addChildVC:(UIViewController*)VC title:(NSString*)title imageName:(NSString*)imageName selectImageName:(NSString*)selectImageName
 {
     // 设置导航栏
@@ -81,16 +82,6 @@
     
     [self addChildViewController:naVC];
 }
-
-
-
-
-
-
-
-
-
-
 
 
 

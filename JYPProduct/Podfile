@@ -20,7 +20,7 @@ target 'JYPProduct' do
   
   pod 'MBProgressHUD'
   pod 'PNChart'
-  
+  pod 'Aspects'
   
   
 end

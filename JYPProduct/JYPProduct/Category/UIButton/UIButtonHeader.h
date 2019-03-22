@@ -10,5 +10,7 @@
 #define UIButtonHeader_h
 
 #import "UIButton+LXMImagePosition.h"
+#import "UIButton+FixMultiClick.h"
+
 
 #endif /* UIButtonHeader_h */
