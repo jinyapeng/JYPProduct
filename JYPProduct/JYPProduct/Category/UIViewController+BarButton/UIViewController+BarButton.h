@@ -10,6 +10,12 @@
 
 @interface UIViewController (BarButton)
 
+/**
+ 本身控制器操作回调
+ */
+@property (nonatomic, copy) void(^operationBlock)(id);
+
+
 - (void)addLeftBarButtonWithImage:(UIImage *)image action:(SEL)action;
 - (void)addLeftBarButtonItemWithTitle:(NSString *)itemTitle  action:(SEL)action;
 

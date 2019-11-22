@@ -8,7 +8,7 @@
 
 #import "HomeManageTableViewCell.h"
 #import "HomeManageCollectionCell.h"
-
+#import "AMapViewController.h"
 
 @interface HomeManageTableViewCell()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
@@ -98,6 +98,10 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
     NSString *title = self.titleArray[indexPath.row];
     
+    NSMutableDictionary *params = [NSMutableDictionary new];
+    [params setObject:@"roomId1234" forKey:@"roomId"];
+    
+    
     if ([title isEqualToString:@"整租"]) {
         [self.viewController.navigationController pushViewControllerStringMu:NameToString(RegistHousingVController) animated:YES parameters:nil];
     }else if ([title isEqualToString:@"合租"]){
@@ -111,13 +115,55 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
             
         }];
     }else if ([title isEqualToString:@"日志"]){
-        [self.viewController.navigationController pushViewControllerStringMu:NameToString(AMapViewController) animated:YES parameters:^(NSMutableDictionary *dict) {
-            
-        }];
+       
+        
+            [CGXPickerView showDatePickerWithTitle:@"" DateType:UIDatePickerModeDate DefaultSelValue:nil MinDateStr:@"2018-05-30" MaxDateStr:nil IsAutoSelect:YES Manager:nil ResultBlock:^(NSString *selectValue) {
+                NSLog(@"%@",selectValue);
+            }];
+        
+        // AMapViewController *vc = [[AMapViewController alloc] init];
+        
+//        [self.viewController.navigationController pushViewControllerMu:ClassName(AMapViewController) animated:YES parameters:^(NSMutableDictionary *dict) {
+//
+//        }];
+        
+//        [self.viewController.navigationController pushViewControllerStringMu:NameToString(AMapViewController) animated:YES parameters:^(NSMutableDictionary *dict) {
+//
+//        } operationBlock:^(id data) {
+//
+//        }];
+        
+        
+        
+        
     }else if ([title isEqualToString:@"微信管理"]){
-        [self.viewController.navigationController pushViewControllerStringMu:NameToString(ChartsViewController) animated:YES parameters:^(NSMutableDictionary *dict) {
+        
+//        [self.viewController.navigationController pushViewControllerStringMu:NameToString(ChartsViewController) animated:YES parameters:^(NSMutableDictionary *dict) {
+//
+//          //  dict =  [NSMutableDictionary dictionaryWithDictionary:params];
+//            [dict setObject:@"123" forKey:@"tempKey"];
+//            [dict setObject:@"roomId1234" forKey:@"roomId"];
+//
+//        }];
+        
+        [self.viewController.navigationController pushViewControllerStringMu:NameToString(HUDManagerViewController) animated:YES parameters:^(NSMutableDictionary *dict) {
+            
+            [dict setObject:@"123" forKey:@"tempKey"];
+         //   [dict setObject:@"roomId1234" forKey:@"roomId"];
+            [dict setDictionary:params];
+            
+            NSLog(@"%@",dict);
+            
+        } operationBlock:^(id data) {
+            
+            NSLog(@"%@",data);
+            
+            
             
         }];
+        
+        
+        
     }
     else {
         
@@ -129,6 +175,27 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
         
     
 }
+
+
+- (void)p_setUIView {
+    
+    UIView *colorView = [[UIView alloc] init];
+    colorView.backgroundColor = HexColor(@"#f4f4f4");
+    [self addSubview:colorView];
+    [colorView  mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self.contentView);
+        
+    }];
+    
+    
+    
+    
+}
+
+
+
+
+
 
 
 @end

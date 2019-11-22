@@ -59,7 +59,7 @@ static BOOL sx_disableFixSpace = NO;
         CGFloat space = sx_defaultFixSpace;
         for (UIView *subview in self.subviews) {
             if ([NSStringFromClass(subview.class) containsString:@"ContentView"]) {
-                subview.layoutMargins = UIEdgeInsetsMake(0, space, 0, space);//可修正iOS11之后的偏移
+               // subview.layoutMargins = UIEdgeInsetsMake(0, space, 0, space);//可修正iOS11之后的偏移
                 break;
             }
         }

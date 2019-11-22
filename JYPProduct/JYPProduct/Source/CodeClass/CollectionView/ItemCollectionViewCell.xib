@@ -12,29 +12,42 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ItemCollectionViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="232" height="178"/>
+            <rect key="frame" x="0.0" y="0.0" width="229" height="111"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="232" height="178"/>
+                <rect key="frame" x="0.0" y="0.0" width="229" height="111"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEf-W1-cOw">
-                        <rect key="frame" x="91" y="77" width="50.5" height="24"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEf-W1-cOw">
+                        <rect key="frame" x="89.5" y="43.5" width="50.5" height="24"/>
+                        <color key="backgroundColor" red="1" green="0.70980392160000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_more" translatesAutoresizingMaskIntoConstraints="NO" id="RFi-Hj-cN6">
+                        <rect key="frame" x="145" y="52" width="13" height="7"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="JnF-yf-2qB"/>
+                            <constraint firstAttribute="height" constant="7" id="Q6F-7D-Evz"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstItem="RFi-Hj-cN6" firstAttribute="leading" secondItem="pEf-W1-cOw" secondAttribute="trailing" constant="5" id="1ww-Hz-oeC"/>
+                <constraint firstItem="RFi-Hj-cN6" firstAttribute="centerY" secondItem="pEf-W1-cOw" secondAttribute="centerY" id="P8r-j1-bcZ"/>
                 <constraint firstItem="pEf-W1-cOw" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="esZ-zg-jWZ"/>
                 <constraint firstItem="pEf-W1-cOw" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="yHZ-j4-42R"/>
             </constraints>
-            <size key="customSize" width="232" height="178"/>
+            <size key="customSize" width="229" height="111"/>
             <connections>
                 <outlet property="titleLab" destination="pEf-W1-cOw" id="ezN-a1-0Qa"/>
             </connections>
-            <point key="canvasLocation" x="43" y="58"/>
+            <point key="canvasLocation" x="39.200000000000003" y="27.436281859070466"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="Icon_more" width="13" height="7"/>
+    </resources>
 </document>

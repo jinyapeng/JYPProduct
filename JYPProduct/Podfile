@@ -22,5 +22,7 @@ target 'JYPProduct' do
   pod 'PNChart'
   pod 'Aspects'
   
+  pod 'WechatOpenSDK'
+  
   
 end

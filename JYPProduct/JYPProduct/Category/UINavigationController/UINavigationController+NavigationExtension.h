@@ -24,5 +24,10 @@
  */
 -(void)pushViewControllerMu:(UIViewController *)viewController animated:(BOOL)animated parameters:(void (^)(NSMutableDictionary * dict))parameter;
 
+-(void)pushViewControllerStringMu:(NSString *)controllerString animated:(BOOL)animated parameter:(NSMutableDictionary *)parameter operationBlock:(void (^)(id data))operation;
+
+-(void)pushViewControllerStringMu:(NSString *)controllerString animated:(BOOL)animated parameters:(void (^)(NSMutableDictionary *dict))parameter operationBlock:(void (^)(id data))operation;
+
+
 
 @end

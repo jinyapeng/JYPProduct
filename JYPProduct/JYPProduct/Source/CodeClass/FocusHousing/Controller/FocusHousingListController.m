@@ -17,17 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    self.navigationController.navigationBar.translucent  = NO;
-//    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
-    
-
-    UIButton *btn = [CBUIKit createButtonWithTitle:@"点击" fontSize:15 titleColor:[UIColor whiteColor]];
-    btn.frame = CGRectMake(100, 250, 100, 100);
-    btn.backgroundColor = [UIColor redColor];
-    [self.view addSubview:btn];
-    btn.clickInterval = 10;
-    
-    [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.title = @"选择框";
     
     
 }

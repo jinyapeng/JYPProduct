@@ -14,6 +14,20 @@
 
 @implementation UIViewController (BarButton)
 
+
+- (void)setOperationBlock:(void (^)(id))operationBlock{
+    objc_setAssociatedObject(self, @"operationBlock", operationBlock, OBJC_ASSOCIATION_COPY);
+}
+-(void (^)(id))operationBlock{
+    return objc_getAssociatedObject(self, @"operationBlock");
+}
+
+
+
+
+
+
+
 - (void)addLeftBarButtonWithImage:(UIImage *)image action:(SEL)action{
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
     view.backgroundColor = [UIColor clearColor];

@@ -15,6 +15,10 @@
  */
 @property (nonatomic, assign)BOOL sx_disableInteractivePop;
 
+
+
+
+
 @end
 
 @interface UINavigationController (SXFullScreen)

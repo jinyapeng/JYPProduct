@@ -11,6 +11,8 @@
 
 @interface ChartsViewController ()
 
+@property (nonatomic,strong)NSString *roomId;
+@property (nonatomic,strong)NSString *tempKey;
 
 @end
 
@@ -53,7 +55,7 @@
     
    
     
-    
+ //   self.operationBlock(@{@"1":@"2"});
     
     
     
