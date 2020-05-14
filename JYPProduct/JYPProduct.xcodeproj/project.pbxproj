@@ -89,6 +89,7 @@
 		186D1BD720C7ED7600E8DFCE /* HomeNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D1BD620C7ED7600E8DFCE /* HomeNavigationView.m */; };
 		187CFF60213CDE3400DF701F /* UIView+Radius.m in Sources */ = {isa = PBXBuildFile; fileRef = 187CFF5F213CDE3400DF701F /* UIView+Radius.m */; };
 		189E2FA120C6919300D216E6 /* ChartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E2FA020C6919300D216E6 /* ChartsViewController.m */; };
+		18B061C3244D8F72005908F0 /* TestGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B061C2244D8F72005908F0 /* TestGCDViewController.m */; };
 		18D6085220BFDB79001C6B9F /* JYPDIYEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D6085120BFDB79001C6B9F /* JYPDIYEmpty.m */; };
 		18D6085720BFE438001C6B9F /* JYPLogLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D6085620BFE438001C6B9F /* JYPLogLoadingView.m */; };
 		18D6085B20BFF106001C6B9F /* JYPMethodTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D6085A20BFF106001C6B9F /* JYPMethodTools.m */; };
@@ -309,6 +310,8 @@
 		189E2F9A20C686FE00D216E6 /* JYPProduct-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JYPProduct-Bridging-Header.h"; sourceTree = "<group>"; };
 		189E2F9F20C6919300D216E6 /* ChartsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartsViewController.h; sourceTree = "<group>"; };
 		189E2FA020C6919300D216E6 /* ChartsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartsViewController.m; sourceTree = "<group>"; };
+		18B061C1244D8F72005908F0 /* TestGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestGCDViewController.h; sourceTree = "<group>"; };
+		18B061C2244D8F72005908F0 /* TestGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGCDViewController.m; sourceTree = "<group>"; };
 		18D6085020BFDB79001C6B9F /* JYPDIYEmpty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYPDIYEmpty.h; sourceTree = "<group>"; };
 		18D6085120BFDB79001C6B9F /* JYPDIYEmpty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYPDIYEmpty.m; sourceTree = "<group>"; };
 		18D6085520BFE438001C6B9F /* JYPLogLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYPLogLoadingView.h; sourceTree = "<group>"; };
@@ -567,6 +570,7 @@
 		183B0FDF2099B10800FB306E /* CodeClass */ = {
 			isa = PBXGroup;
 			children = (
+				18B061BF244D8F43005908F0 /* GCD */,
 				185872662240CD3300AEFD45 /* CollectionView */,
 				18F40EDC217DC20900F08A4A /* 自定义提示框 */,
 				18480868212C0A4B006BCEAD /* ManualMode */,
@@ -960,6 +964,23 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		18B061BF244D8F43005908F0 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				18B061C0244D8F4D005908F0 /* Controller */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		18B061C0244D8F4D005908F0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18B061C1244D8F72005908F0 /* TestGCDViewController.h */,
+				18B061C2244D8F72005908F0 /* TestGCDViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		18D6084F20BFDB1F001C6B9F /* EmptyView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1310,6 +1331,7 @@
 				18480873212C0DB6006BCEAD /* ManualModeTableViewCell.m in Sources */,
 				183B10182099C2CF00FB306E /* NSObject+GCD.m in Sources */,
 				1837CBBF212D163800BCAFDF /* CGXStringPickerView.m in Sources */,
+				18B061C3244D8F72005908F0 /* TestGCDViewController.m in Sources */,
 				186D1BD020C7DE3A00E8DFCE /* FocusHousingListController.m in Sources */,
 				183B10202099C45600FB306E /* Model_User.m in Sources */,
 				1837CBC0212D163800BCAFDF /* NSDate+CGXPicker.m in Sources */,

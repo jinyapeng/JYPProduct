@@ -9,6 +9,7 @@
 #import "HomeManageTableViewCell.h"
 #import "HomeManageCollectionCell.h"
 #import "AMapViewController.h"
+#import "TestGCDViewController.h"
 
 @interface HomeManageTableViewCell()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
@@ -167,7 +168,11 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     }
     else {
         
-        [self.viewController.navigationController pushViewControllerStringMu:NameToString(CollectionViewController) animated:YES parameters:^(NSMutableDictionary *dict) {
+//        [self.viewController.navigationController pushViewControllerStringMu:NameToString(CollectionViewController) animated:YES parameters:^(NSMutableDictionary *dict) {
+//
+//        }];
+        
+        [self.viewController.navigationController pushViewControllerStringMu:NameToString(TestGCDViewController) animated:YES parameters:^(NSMutableDictionary *dict) {
             
         }];
         
